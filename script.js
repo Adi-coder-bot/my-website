@@ -154,6 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 ul.style.width = "0vw";
                 ul.style.visibility = "hidden";
                 ul.style.transition = "width 300ms ease-out";
+                blur.style.filter = "blur(0px)";
+                blur.style.transition = "filter 300ms ease";
             }
         });
     });
