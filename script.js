@@ -7,26 +7,27 @@ document.addEventListener("DOMContentLoaded", () => {
     let main = document.querySelector("main");
     let footer = document.querySelector("footer");
     let menu = document.getElementsByClassName("menu")[0];
+    let blur = document.getElementsByClassName("blur")[0];
     menu_icon.addEventListener("click", () => {
         let VW = document.documentElement.clientWidth;
         if(VW > 1030){
             navbar.style.width = "25vw";
             navbar.style.visibility = "visible";
             navbar.style.transition = "width 300ms ease-out";
-            cancel.style.width = "calc(24vw - 10px)";
+            cancel.style.width = "calc(25vw - 20px)";
             cancel.style.visibility = "visible";
-            cancel.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
-            ul.style.width = "25vw";
+            cancel.style.transition = "width 300ms ease-out";
+            ul.style.width = "calc(25vw - 20px)";
             ul.style.visibility = "visible";
-            ul.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            ul.style.transition = "width 300ms ease-out";
             header.style.width = "75vw"; 
-            header.style.transition = "width 300ms ease-out 300ms";
+            header.style.transition = "width 300ms ease-out";
             menu.style.width = "0vw";
-            menu.style.transition = "width 300ms ease-out 300ms";
+            menu.style.transition = "width 300ms ease-out";
             main.style.width = "75vw";
-            main.style.transition = "width 300ms ease-out 300ms";
+            main.style.transition = "width 300ms ease-out";
             footer.style.width = "75vw";
-            footer.style.transition = "width 300ms ease-out 300ms";
+            footer.style.transition = "width 300ms ease-out";
             menu_icon.style.visibility = "hidden";
             menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
         }
@@ -36,18 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.style.transition = "width 300ms ease-out";
             cancel.style.width = "calc(34vw - 10px)";
             cancel.style.visibility = "visible";
-            cancel.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            cancel.style.transition = "width 300ms ease-out";
             ul.style.width = "35vw";
             ul.style.visibility = "visible";
-            ul.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            ul.style.transition = "width 300ms ease-out";
             header.style.width = "65vw"; 
-            header.style.transition = "width 300ms ease-out 300ms";
+            header.style.transition = "width 300ms ease-out";
             menu.style.width = "0vw";
-            menu.style.transition = "width 300ms ease-out 300ms";
+            menu.style.transition = "width 300ms ease-out";
             main.style.width = "65vw";
-            main.style.transition = "width 300ms ease-out 300ms";
+            main.style.transition = "width 300ms ease-out";
             footer.style.width = "65vw";
-            footer.style.transition = "width 300ms ease-out 300ms";
+            footer.style.transition = "width 300ms ease-out";
             menu_icon.style.visibility = "hidden";
             menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
         }
@@ -57,18 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.style.transition = "width 300ms ease-out";
             cancel.style.width = "calc(44vw - 10px)";
             cancel.style.visibility = "visible";
-            cancel.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            cancel.style.transition = "width 300ms ease-out";
             ul.style.width = "45vw";
             ul.style.visibility = "visible";
-            ul.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            ul.style.transition = "width 300ms ease-out";
             header.style.width = "55vw"; 
-            header.style.transition = "width 300ms ease-out 300ms";
+            header.style.transition = "width 300ms ease-out";
             menu.style.width = "0vw";
-            menu.style.transition = "width 300ms ease-out 300ms";
+            menu.style.transition = "width 300ms ease-out";
             main.style.width = "55vw";
-            main.style.transition = "width 300ms ease-out 300ms";
+            main.style.transition = "width 300ms ease-out";
             footer.style.width = "55vw";
-            footer.style.transition = "width 300ms ease-out 300ms";
+            footer.style.transition = "width 300ms ease-out";
             menu_icon.style.visibility = "hidden";
             menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
         }
@@ -78,10 +79,12 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.style.transition = "width 300ms ease-out";
             cancel.style.width = "calc(44vw - 10px)";
             cancel.style.visibility = "visible";
-            cancel.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            cancel.style.transition = "width 300ms ease-out";
             ul.style.width = "45vw";
             ul.style.visibility = "visible";
-            ul.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            ul.style.transition = "width 300ms ease-out";
+            blur.style.filter = "blur(5px)";
+            blur.style.transition = "filter 300ms ease";
         }
         else if(VW <= 450 && VW > 0){
             navbar.style.width = "85vw";
@@ -89,10 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.style.transition = "width 300ms ease-out";
             cancel.style.width = "calc(84vw - 10px)";
             cancel.style.visibility = "visible";
-            cancel.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            cancel.style.transition = "width 300ms ease-out";
             ul.style.width = "85vw";
             ul.style.visibility = "visible";
-            ul.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+            ul.style.transition = "width 300ms ease-out";
+            blur.style.filter = "blur(5px)";
+            blur.style.transition = "filter 300ms ease";
         }
     });
     
@@ -102,21 +107,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if(VW > 600){
             navbar.style.width = "0vw";
             navbar.style.visibility = "hidden";
-            navbar.style.transition = "width 300ms ease-out 300ms, visibility ease-out 300ms, opacity ease-out 300ms";
+            navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
             cancel.style.width = "0vw";
             cancel.style.visibility = "hidden";
-            cancel.style.transition = "width 300ms ease-out 300ms, visibility ease-out 300ms, opacity ease-out 300ms";
+            cancel.style.transition = "width 300ms ease-out, visibility ease-out, opacity ease-out 300ms";
             ul.style.width = "0vw";
             ul.style.visibility = "hidden";
-            ul.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
-            header.style.width = "100vw"; 
+            ul.style.transition = "width 300ms ease-out, visibility ease-out, opacity ease-out 300ms";
+            header.style.width = "100vw";
             header.style.transition = "width 300ms ease-out";
-            menu.style.width = "150px";
-            menu.style.transition = "width 300ms ease-out";
             main.style.width = "100vw";
             main.style.transition = "width 300ms ease-out";
             footer.style.width = "100vw";
             footer.style.transition = "width 300ms ease-out";
+            menu.style.width = "10vw";
+            menu.style.transition = "width 300ms ease-out";
             menu_icon.style.visibility = "visible";
             menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
         }
@@ -130,6 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
             ul.style.width = "0vw";
             ul.style.visibility = "hidden";
             ul.style.transition = "width 300ms ease-out";
+            blur.style.filter = "blur(0px)";
+            blur.style.transition = "filter 300ms ease";
         }
     });
 
@@ -149,6 +156,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 ul.style.transition = "width 300ms ease-out";
             }
         });
+    });
+
+    blur.addEventListener("click", () => {
+        let width = parseFloat(getComputedStyle(navbar).width);
+        if(VW <= 600 && VW > 0){
+            if(width > window.innerWidth*0.20){
+                navbar.style.width = "0vw";
+                navbar.style.visibility = "hidden";
+                navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+                cancel.style.width = "0vw";
+                cancel.style.visibility = "hidden";
+                cancel.style.transition = "width 300ms ease-out";
+                ul.style.width = "0vw";
+                ul.style.visibility = "hidden";
+                ul.style.transition = "width 300ms ease-out";
+                blur.style.filter = "blur(0px)";
+                blur.style.transition = "filter 300ms ease";
+            }
+        }
     });
     
 });

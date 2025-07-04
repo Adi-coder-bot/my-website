@@ -13,7 +13,7 @@
         html{
             scroll-behavior: smooth;
         }
-        body{
+        .blur{
             height: auto;
             width: 100vw;
             display: flex;
@@ -84,14 +84,14 @@
             width: 2vw;
         }
         header{
-            height: 30vh;
+            height: 10vw;
             width: 100vw;
             background: linear-gradient(to left,#1f0050, #4203a7);
             color: white;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
             display: grid;
             grid-template-columns: auto 1fr;
-            grid-template-rows: 30vh;
+            grid-template-rows: 10vw;
             justify-items: center;
             align-items: center;
             position: sticky;
@@ -100,7 +100,7 @@
             font-size: 2.5vw;
         }
         .menu{
-            height: 15vh;
+            height: 30vh;
             width: 10vw;
             display: flex;
             justify-content: center;
@@ -201,27 +201,29 @@
             <li><a href="index.html#contact_us">Contact Us</a></li>
         </ul>
     </div>
-    <header>
-        <div class="menu">
-            <img class="icon" src="documents/icons8-menu-240.png" alt="menu icon">
-        </div>
-        <h1 id="title">Product List</h1>
-    </header>
-    <main>
-        <div class="image">
-            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.46_3cea6d6d.jpg" alt="Image">
-        </div>
-        <div class="image">
-            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.47_3d66bec1.jpg" alt="Image">
-        </div>
-        <div class="image">
-            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.48_1fa181a5.jpg" alt="Image">
-        </div>
-        <div class="image">
-            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.48_8d21b617.jpg" alt="Image">
-        </div>
-    </main>
-    <footer> &copy; 2025 | Laavi Fashion Creation | All Rights Reserved.</footer>
+    <div class="blur">
+        <header>
+            <div class="menu">
+                <img class="icon" src="documents/icons8-menu-240.png" alt="menu icon">
+            </div>
+            <h1 id="title">Product List</h1>
+        </header>
+        <main>
+            <div class="image">
+                <img src="documents/WhatsApp Image 2025-07-03 at 19.14.46_3cea6d6d.jpg" alt="Image">
+            </div>
+            <div class="image">
+                <img src="documents/WhatsApp Image 2025-07-03 at 19.14.47_3d66bec1.jpg" alt="Image">
+            </div>
+            <div class="image">
+                <img src="documents/WhatsApp Image 2025-07-03 at 19.14.48_1fa181a5.jpg" alt="Image">
+            </div>
+            <div class="image">
+                <img src="documents/WhatsApp Image 2025-07-03 at 19.14.48_8d21b617.jpg" alt="Image">
+            </div>
+        </main>
+        <footer> &copy; 2025 | Laavi Fashion Creation | All Rights Reserved.</footer>
+    </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             let menu_icon = document.querySelector('img[alt="menu icon"]');
@@ -327,13 +329,13 @@
                 if(VW > 600){
                     navbar.style.width = "0vw";
                     navbar.style.visibility = "hidden";
-                    navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms";
+                    navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
                     cancel.style.width = "0vw";
                     cancel.style.visibility = "hidden";
-                    cancel.style.transition = "width 300ms ease-out, visibility ease-out";
+                    cancel.style.transition = "width 300ms ease-out, visibility ease-out, opacity ease-out 300ms";
                     ul.style.width = "0vw";
                     ul.style.visibility = "hidden";
-                    ul.style.transition = "width 300ms ease-out, visibility ease-out";
+                    ul.style.transition = "width 300ms ease-out, visibility ease-out, opacity ease-out 300ms";
                     header.style.width = "100vw";
                     header.style.transition = "width 300ms ease-out"
                     main.style.width = "100vw";
@@ -348,13 +350,13 @@
                 else if(VW <= 600 && VW > 0){
                     navbar.style.width = "0vw";
                     navbar.style.visibility = "hidden";
-                    navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms";
+                    navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
                     cancel.style.width = "0vw";
                     cancel.style.visibility = "hidden";
-                    cancel.style.transition = "width 300ms ease-out, visibility ease-out";
+                    cancel.style.transition = "width 300ms ease-out";
                     ul.style.width = "0vw";
                     ul.style.visibility = "hidden";
-                    ul.style.transition = "width 300ms ease-out, visibility ease-out";
+                    ul.style.transition = "width 300ms ease-out";
                 }
             });
 
