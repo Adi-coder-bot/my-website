@@ -159,9 +159,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
+    
     blur.addEventListener("click", () => {
         let width = parseFloat(getComputedStyle(navbar).width);
+        let VW = document.documentElement.clientWidth;
         if(VW <= 600 && VW > 0){
             if(width > window.innerWidth*0.20){
                 navbar.style.width = "0vw";
