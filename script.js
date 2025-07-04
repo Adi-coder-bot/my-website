@@ -141,9 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     let As = document.querySelectorAll("a");
-    let VW = document.documentElement.clientWidth;
     As.forEach((a) => {
         a.addEventListener("click", () => {
+            let VW = document.documentElement.clientWidth;
             if(VW <= 600 && VW > 0){
                 navbar.style.width = "0vw";
                 navbar.style.visibility = "hidden";
