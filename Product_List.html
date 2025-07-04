@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laavi Fashion Creation Product List</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            height: auto;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: rgb(206, 190, 100);
+        }
+        .navbar{
+            height: 100vh;
+            width: 0vw;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background: linear-gradient(to right,#1f0050, #4203a7);
+            padding: 10px;
+            box-sizing: border-box;
+            z-index: 101;
+            visibility: hidden;
+        }
+        #cancel{
+            height: 3vh;
+            width: 0vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            visibility: hidden;
+        }
+        ul{
+            height: 97vh;
+            width: 0vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            visibility: hidden;
+        }
+        ul li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+            transition: color 300ms ease, text-shadow 300ms ease;
+            font-size: 3vw;
+            display: inline-block;
+            transition: transform 300ms ease-out, color 300ms ease-out, text-shadow 300ms ease-out;
+        }
+        a:hover{
+            transform: scale(0.85);
+            color: gold;
+            text-shadow: -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black;
+        }
+        #about{
+            scroll-margin-top: 30vh;
+        }
+        #contact_us{
+            scroll-margin-top: 30vh;
+        }
+        .icon{
+            height: 5vh;
+            width: 2.5vw;
+            cursor: pointer;
+            transition: width 300ms ease, height 300ms ease;
+        }
+        .icon:hover{
+            height: 3.5vh;
+            width: 2vw;
+        }
+        header{
+            height: 30vh;
+            width: 100vw;
+            background: linear-gradient(to left,#1f0050, #4203a7);
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 30vh;
+            justify-items: center;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+            font-size: 2.5vw;
+        }
+        .menu{
+            height: 15vh;
+            width: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            min-height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 500px);
+            justify-content: center;
+            align-content: center;
+            gap: 3vw;
+            padding: 3vw;
+            box-sizing: border-box;
+        }
+        .image{
+            height: 400px;
+            width: 500px;
+            background-color: #f3ebff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        img{
+            height: 300px;
+            width: auto;
+            border-radius: 10px;
+        }
+        footer{
+            height: 10vh;
+            width: 100vw;
+            background-color: #3a275e;
+            color: #f3ebff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5vw;
+        }
+        @media screen and (max-width: 801px) {
+            header{
+                font-size: 4vw;
+            }
+            footer{
+                font-size: 3vw;
+            }
+            a{
+                font-size: 4vw;
+            }
+            .icon{
+                width: 3.5vw;
+            }
+        }
+        @media screen and (max-width: 601px) {
+            .icon{
+                width: 4.5vw;
+            }
+            a{
+                font-size: 5vw;
+            }
+            .image{
+                width: 80vw;
+                height: 70vw;
+            }
+            img{
+                height: 50vw;
+            }
+            main{
+                grid-template-columns: repeat(auto-fill, 80vw);
+            }
+        }
+        @media screen and (max-width: 451px) {
+            .icon{
+                width: 6.5vw;
+            }
+            a{
+                font-size: 7.5vw;
+            }
+            header{
+                font-size: 5vw;
+            }
+            footer{
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div id="cancel">
+            <img class="icon" src="documents/close.png" alt="close icon">
+        </div>
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact_us">Contact Us</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="menu">
+            <img class="icon" src="documents/icons8-menu-240.png" alt="menu icon">
+        </div>
+        <h1 id="title">Product List</h1>
+    </header>
+    <main>
+        <div class="image">
+            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.46_3cea6d6d.jpg" alt="Image">
+        </div>
+        <div class="image">
+            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.47_3d66bec1.jpg" alt="Image">
+        </div>
+        <div class="image">
+            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.48_1fa181a5.jpg" alt="Image">
+        </div>
+        <div class="image">
+            <img src="documents/WhatsApp Image 2025-07-03 at 19.14.48_8d21b617.jpg" alt="Image">
+        </div>
+    </main>
+    <footer> &copy; 2025 | Laavi Fashion Creation | All Rights Reserved.</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let menu_icon = document.querySelector('img[alt="menu icon"]');
+            let navbar = document.getElementsByClassName("navbar")[0];
+            let cancel = document.getElementById("cancel");
+            let ul = document.querySelector("ul");
+            let header = document.querySelector("header");
+            let main = document.querySelector("main");
+            let footer = document.querySelector("footer");
+            let menu = document.getElementsByClassName("menu")[0];
+            menu_icon.addEventListener("click", () => {
+                let VW = document.documentElement.clientWidth;
+                if(VW > 1030){
+                    navbar.style.width = "25vw";
+                    navbar.style.visibility = "visible";
+                    navbar.style.transition = "width 300ms ease-out";
+                    cancel.style.width = "calc(24vw - 10px)";
+                    cancel.style.visibility = "visible";
+                    cancel.style.transition = "width 300ms ease-out";
+                    ul.style.width = "25vw";
+                    ul.style.visibility = "visible";
+                    ul.style.transition = "width 300ms ease-out";
+                    header.style.width = "75vw";
+                    header.style.transition = "width 300ms ease-out"
+                    main.style.width = "75vw";
+                    main.style.transition = "width 300ms ease-out"
+                    footer.style.width = "75vw";
+                    footer.style.transition = "width 300ms ease-out"
+                    menu.style.width = "0vw";
+                    menu.style.transition = "width 300ms ease-out";
+                    menu_icon.style.visibility = "hidden";
+                    menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
+                }
+                else if(VW <=1030 && VW > 800){
+                    navbar.style.width = "35vw";
+                    navbar.style.visibility = "visible";
+                    navbar.style.transition = "width 300ms ease-out";
+                    cancel.style.width = "calc(34vw - 10px)";
+                    cancel.style.visibility = "visible";
+                    cancel.style.transition = "width 300ms ease-out";
+                    ul.style.width = "35vw";
+                    ul.style.visibility = "visible";
+                    ul.style.transition = "width 300ms ease-out";
+                    header.style.width = "65vw";
+                    header.style.transition = "width 300ms ease-out"
+                    main.style.width = "65vw";
+                    main.style.transition = "width 300ms ease-out"
+                    footer.style.width = "65vw";
+                    footer.style.transition = "width 300ms ease-out"
+                    menu.style.width = "0vw";
+                    menu.style.transition = "width 300ms ease-out";
+                    menu_icon.style.visibility = "hidden";
+                    menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
+                }
+                else if(VW <= 800 && VW > 600){
+                    navbar.style.width = "45vw";
+                    navbar.style.visibility = "visible";
+                    navbar.style.transition = "width 300ms ease-out";
+                    cancel.style.width = "calc(44vw - 10px)";
+                    cancel.style.visibility = "visible";
+                    cancel.style.transition = "width 300ms ease-out";
+                    ul.style.width = "45vw";
+                    ul.style.visibility = "visible";
+                    ul.style.transition = "width 300ms ease-out";
+                    header.style.width = "55vw";
+                    header.style.transition = "width 300ms ease-out"
+                    main.style.width = "55vw";
+                    main.style.transition = "width 300ms ease-out"
+                    footer.style.width = "55vw";
+                    footer.style.transition = "width 300ms ease-out"
+                    menu.style.width = "0vw";
+                    menu.style.transition = "width 300ms ease-out";
+                    menu_icon.style.visibility = "hidden";
+                    menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
+                }
+                else if(VW <= 600 && VW > 450){
+                    navbar.style.width = "45vw";
+                    navbar.style.visibility = "visible";
+                    navbar.style.transition = "width 300ms ease-out";
+                    cancel.style.width = "calc(44vw - 10px)";
+                    cancel.style.visibility = "visible";
+                    cancel.style.transition = "width 300ms ease-out";
+                    ul.style.width = "45vw";
+                    ul.style.visibility = "visible";
+                    ul.style.transition = "width 300ms ease-out";
+                }
+                else if(VW <= 450 && VW > 0){
+                    navbar.style.width = "85vw";
+                    navbar.style.visibility = "visible";
+                    navbar.style.transition = "width 300ms ease-out";
+                    cancel.style.width = "calc(84vw - 10px)";
+                    cancel.style.visibility = "visible";
+                    cancel.style.transition = "width 300ms ease-out";
+                    ul.style.width = "85vw";
+                    ul.style.visibility = "visible";
+                    ul.style.transition = "width 300ms ease-out";
+                }
+            });
+            
+            let close_icon = document.querySelector('img[alt="close icon"]');
+            close_icon.addEventListener("click", () => {
+                let VW = document.documentElement.clientWidth;
+                if(VW > 600){
+                    navbar.style.width = "0vw";
+                    navbar.style.visibility = "hidden";
+                    navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms";
+                    cancel.style.width = "0vw";
+                    cancel.style.visibility = "hidden";
+                    cancel.style.transition = "width 300ms ease-out, visibility ease-out";
+                    ul.style.width = "0vw";
+                    ul.style.visibility = "hidden";
+                    ul.style.transition = "width 300ms ease-out, visibility ease-out";
+                    header.style.width = "100vw";
+                    header.style.transition = "width 300ms ease-out"
+                    main.style.width = "100vw";
+                    main.style.transition = "width 300ms ease-out"
+                    footer.style.width = "100vw";
+                    footer.style.transition = "width 300ms ease-out"
+                    menu.style.width = "10vw";
+                    menu.style.transition = "width 300ms ease-out";
+                    menu_icon.style.visibility = "visible";
+                    menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
+                }
+                else if(VW <= 600 && VW > 0){
+                    navbar.style.width = "0vw";
+                    navbar.style.visibility = "hidden";
+                    navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms";
+                    cancel.style.width = "0vw";
+                    cancel.style.visibility = "hidden";
+                    cancel.style.transition = "width 300ms ease-out, visibility ease-out";
+                    ul.style.width = "0vw";
+                    ul.style.visibility = "hidden";
+                    ul.style.transition = "width 300ms ease-out, visibility ease-out";
+                }
+            });
+
+            let As = document.querySelectorAll("a");
+            let VW = document.documentElement.clientWidth;
+            As.forEach((a) => {
+                a.addEventListener("click", () => {
+                    if(VW <= 600 && VW > 0){
+                        navbar.style.width = "0vw";
+                        navbar.style.visibility = "hidden";
+                        navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+                        cancel.style.width = "0vw";
+                        cancel.style.visibility = "hidden";
+                        cancel.style.transition = "width 300ms ease-out";
+                        ul.style.width = "0vw";
+                        ul.style.visibility = "hidden";
+                        ul.style.transition = "width 300ms ease-out";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
