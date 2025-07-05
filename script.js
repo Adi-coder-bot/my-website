@@ -178,6 +178,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 blur.style.transition = "filter 300ms ease";
             }
         }
+        else if(VW > 600){
+            if(width > window.innerWidth*0.20){
+                navbar.style.width = "0vw";
+                navbar.style.visibility = "hidden";
+                navbar.style.transition = "width 300ms ease-out, visibility ease-out 300ms, opacity ease-out 300ms";
+                cancel.style.width = "0vw";
+                cancel.style.visibility = "hidden";
+                cancel.style.transition = "width 300ms ease-out, visibility ease-out, opacity ease-out 300ms";
+                ul.style.width = "0vw";
+                ul.style.visibility = "hidden";
+                ul.style.transition = "width 300ms ease-out, visibility ease-out, opacity ease-out 300ms";
+                header.style.width = "100vw";
+                header.style.transition = "width 300ms ease-out";
+                main.style.width = "100vw";
+                main.style.transition = "width 300ms ease-out";
+                footer.style.width = "100vw";
+                footer.style.transition = "width 300ms ease-out";
+                menu.style.width = "10vw";
+                menu.style.transition = "width 300ms ease-out";
+                menu_icon.style.visibility = "visible";
+                menu_icon.style.transition = "visibility 300ms ease-out, opacity 300ms ease-out";
+            }
+        }
     });
     
 });
