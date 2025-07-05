@@ -336,6 +336,8 @@
                     ul.style.width = "45vw";
                     ul.style.visibility = "visible";
                     ul.style.transition = "width 300ms ease-out";
+                    blur.style.filter = "blur(5px)"
+                    blur.style.transition = "filter 300ms ease-out";
                 }
                 else if(VW <= 450 && VW > 0){
                     navbar.style.width = "85vw";
@@ -347,6 +349,8 @@
                     ul.style.width = "85vw";
                     ul.style.visibility = "visible";
                     ul.style.transition = "width 300ms ease-out";
+                    blur.style.filter = "blur(5px)";
+                    blur.style.transition = "filter 300ms ease-out";
                 }
             });
             
@@ -384,9 +388,11 @@
                     ul.style.width = "0vw";
                     ul.style.visibility = "hidden";
                     ul.style.transition = "width 300ms ease-out";
+                    blur.style.filter = "blur(0px)";
+                    blur.style.transition = "filter 300ms ease-out";
                 }
             });
-
+            
             let As = document.querySelectorAll("a");
             As.forEach((a) => {
                 let VW = document.documentElement.clientWidth;
@@ -401,6 +407,8 @@
                         ul.style.width = "0vw";
                         ul.style.visibility = "hidden";
                         ul.style.transition = "width 300ms ease-out";
+                        blur.style.filter = "blur(0px)";
+                        blur.style.transition = "filter 300ms ease-out";
                     }
                 });
             });
